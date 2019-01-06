@@ -1,12 +1,72 @@
 <template>
   <div class="PageFooter">
     <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
+      <div class="content">
+        <div class="columns container is-fluid">
+
+          <div class="column is-2 links">
+            <p>Features</p>
+            <div class="columns is-mobile">
+              <div class="column">
+                <ul>
+                  <li>Chat & Messaging</li>
+                  <li>Moderation & Data</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="column is-2 links">
+            <p>Solutions</p>
+             <div class="columns is-mobile">
+              <div class="column">
+                <ul>
+                  <li>Social Media</li>
+                  <li>Gmaing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-2 links">
+            <p>Documentation</p>
+            <div class="columns is-mobile">
+              <div class="column">
+                <ul>
+                  <li>Unity SDK</li>
+                  <li>Platform API</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-2 links">
+            <p>Support</p>
+            <div class="columns is-mobile">
+              <div class="column">
+                <ul>
+                  <li>Help Center</li>
+                  <li>Conatct US</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-2 links">
+            <p>Comapny</p>
+            <div class="columns is-mobile">
+              <div class="column">
+                <ul>
+                  <li>About</li>
+                  <li>Jobs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-2 links">Follow Us At</div>
+        </div>
       </div>
     </footer>
   </div>
@@ -23,5 +83,12 @@ export default {
 .PageFooter{
   position: fixed;
   bottom: 0;
+  width: 100%;
+  .footer {
+    padding: 2rem 1.5rem 2rem;
+    .content ul {
+      margin-left: 0px;
+    }
+  }
 }
 </style>

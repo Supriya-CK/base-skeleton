@@ -38,7 +38,7 @@ const routes = [
     component: DefaultLayout,
     children: [
       {
-        path: '/login',
+        path: 'login',
         component: getRouteComponent('Login'),
       },
     ],
