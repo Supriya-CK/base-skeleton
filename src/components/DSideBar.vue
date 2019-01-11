@@ -2,13 +2,16 @@
   <div class="DSideBar">
     <aside class="menu">
       <p class="menu-label">
-        Menu 1
+        <font-awesome-icon icon="bars" />
       </p>
       <p class="menu-label">
-        Menu 2
+        <font-awesome-icon icon="folder-open" />
       </p>
       <p class="menu-label">
-        Menu 3
+        <font-awesome-icon icon="calendar-plus" />
+      </p>
+      <p class="menu-label">
+        <font-awesome-icon icon="envelope" />
       </p>
     </aside>
   </div>
@@ -28,8 +31,25 @@ export default {
     position: fixed;
     height: 100vH;
     padding: 2rem 1.5rem 2rem;
-    background: $navBar;
+    background: #fdfdfd;
     left: 0;
     top: 0;
+    box-shadow: 1px 5px 20px #dbdbdc;
+    .menu-label {
+    margin-bottom: 4em;
+    height: 45px;
+    width: 45px;
+    border-radius: 7px;
+    background: white;
+    position: relative;
+    box-shadow: 7px 3px 28px #dedede;
+    svg {
+      font-size: 30px;
+      color: #707fdd;
+      position: absolute;
+      left: 8px;
+      top: 7px;
+      }
+    }
 }
 </style>

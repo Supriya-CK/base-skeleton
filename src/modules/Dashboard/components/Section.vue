@@ -76,6 +76,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .Section {
-  padding: 8rem;
+  padding: 8rem 8rem 1rem;
+  .box {
+    box-shadow: 1px 5px 10px #dbdbdc;
+  }
 }
 </style>

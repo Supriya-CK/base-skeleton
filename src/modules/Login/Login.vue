@@ -1,13 +1,13 @@
 <template>
-  <div class="Login container is-fluid">
-    <div class="columns">
+  <div class="Login">
+    <div class="columns container is-fluid">
       <div class="column">
-        <figure class="image is-64x64">
+        <figure class="image is-128x128">
           <img src="../../assets/img/logo.png">
         </figure>
       </div>
     </div>
-    <div class="columns">
+    <div class="columns container is-fluid">
       <div class="column is-5">
         <figure class="image is-256x256">
           <img src="../../assets/img/frontDesk.jpg">
@@ -15,10 +15,29 @@
       </div>
       <div class="column is-5 is-offset-2">
         <h4 class="title">Welcome Back :)</h4>
-        <h6 class="subtitle">To keep connected with us please login</h6>
-        <a class="button is-small is-rounded is-hovered is-link"><span>Twitter</span></a>
-        <a class="button is-small is-rounded is-hovered is-danger">Gmail</a>
-        <a class="button is-small is-rounded is-hovered is-link"><span>Facebook</span></a>
+        <h6 class="subtitle">To keep connected with us please login
+          <figure class="image is-32x32 bell">
+            <img src="../../assets/img/bell-icon.png">
+          </figure>
+        </h6>
+        <a class="button google social-login">
+           <figure class="image is-32x32">
+            <img class="socail-links" src="../../assets/img/google-signIn.png">
+          </figure>
+          <span>Sign in with Google</span>
+        </a>
+        <a class="button facebook social-login">
+           <figure class="image is-32x32">
+            <img class="socail-links" src="../../assets/img/facebook-signIn.png">
+          </figure>
+          <span>Sign in with Facebook</span>
+        </a>
+        <a class="button twitter social-login">
+          <figure class="image is-32x32">
+            <img class="socail-links" src="../../assets/img/twitter.png">
+          </figure>
+          <span>Sign in with Twitter</span>
+        </a>
       </div>
     </div>
   </div>
@@ -33,6 +52,42 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .Login{
-
+  background: #f8fafb;
+  padding: 10px;
+  .title {
+    font-weight: 400;
+    font-size: 45px;
+  }
+  .subtitle {
+    margin-top: 1.5rem;
+  }
+  .bell {
+    display: inline-block;
+    top: 9px;
+  }
+  .social-login {
+    height: 45px;
+    width: 300px;
+    justify-content: left;
+    margin-bottom: 20px;
+    span {
+      color: white;
+      border-left: 1px solid grey;
+      padding-left: 15px;
+      margin-left: 15px;
+    }
+  }
+  .google {
+    background-color: #d63d2d;
+  }
+  .facebook {
+    background-color: #3e68af;
+  }
+  .twitter {
+    background-color: #62aeeb;
+  }
+  .socail-links {
+    border-radius: 50px;
+  }
 }
 </style>

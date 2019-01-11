@@ -1,6 +1,7 @@
 <template>
   <div class="Dashboard">
     <DNavigationBar></DNavigationBar>
+    <DSideBar></DSideBar>
     <Section></Section>
     <DPageFooter></DPageFooter>
   </div>
@@ -9,6 +10,7 @@
 <script>
 import DNavigationBar from '@/components/DNavigationBar.vue';
 import DPageFooter from '@/components/DPageFooter.vue';
+import DSideBar from '@/components/DSideBar.vue';
 import Section from './components/Section.vue';
 
 export default {
@@ -17,6 +19,7 @@ export default {
     DNavigationBar,
     DPageFooter,
     Section,
+    DSideBar,
   },
 };
 </script>
@@ -24,6 +27,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .Dashboard{
-
+  background: #eff2fa;
 }
 </style>

@@ -21,7 +21,7 @@ export default {
 .DPageFooter{
   position: relative;
   .footer {
-    padding: 3rem 1.5rem 2rem;
+    padding: 1rem 1.5rem 1rem;
   }
 }
 </style>
