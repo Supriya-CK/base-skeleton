@@ -1,14 +1,21 @@
 <template>
   <div class="Home">
     <NavigationBar></NavigationBar>
-    <div class="container is-fluid">
-
-    </div>
+    <Intro></Intro>
+    <Features></Features>
+    <Highlights></Highlights>
+    <KeyFeatures></KeyFeatures>
+    <Explore></Explore>
     <PageFooter></PageFooter>
   </div>
 </template>
 
 <script>
+import Intro from './components/Intro.vue';
+import Features from './components/Features.vue';
+import Highlights from './components/Highlights.vue';
+import KeyFeatures from './components/KeyFeatures.vue';
+import Explore from './components/Explore.vue';
 import NavigationBar from '@/components/NavigationBar.vue';
 import PageFooter from '@/components/PageFooter.vue';
 
@@ -17,6 +24,11 @@ export default {
   components: {
     NavigationBar,
     PageFooter,
+    Intro,
+    Features,
+    Highlights,
+    KeyFeatures,
+    Explore,
   },
 };
 </script>
@@ -25,6 +37,6 @@ export default {
 <style scoped lang="scss">
 .Home{
   background: #c6c5f7;
-  height: 100vH;
+  height: auto;
 }
 </style>

@@ -37,19 +37,26 @@ export default {
     box-shadow: 1px 5px 20px #dbdbdc;
     .menu-label {
     margin-bottom: 4em;
+    cursor: pointer;
     height: 45px;
     width: 45px;
     border-radius: 7px;
     background: white;
     position: relative;
     box-shadow: 7px 3px 28px #dedede;
-    svg {
-      font-size: 30px;
-      color: #707fdd;
-      position: absolute;
-      left: 8px;
-      top: 7px;
+    &:hover {
+      svg {
+        font-size: 30px;
       }
     }
+    svg {
+      font-size: 25px;
+      transition: all 0.3s ease;
+      color: #707fdd;
+      display: flex;
+      margin: auto;
+      height: 100%;
+    }
+  }
 }
 </style>

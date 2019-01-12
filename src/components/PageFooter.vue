@@ -1,8 +1,8 @@
 <template>
   <div class="PageFooter">
     <footer class="footer">
-      <div class="content">
-        <div class="columns container is-fluid">
+      <div class="content container is-fluid">
+        <div class="columns">
 
           <div class="column is-2 links">
             <p>Features</p>
@@ -81,8 +81,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .PageFooter{
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  top: 150px;
   width: 100%;
   .footer {
     padding: 2rem 1.5rem 2rem;

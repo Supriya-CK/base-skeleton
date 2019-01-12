@@ -7,9 +7,11 @@
         </figure>
       </div>
       <div class="column is-2 is-offset-7 profile">
-        <span>Hi User
-          <font-awesome-icon icon="caret-down" />
-        </span>
+        <div class="profile-name">
+          <span>Hi User
+            <font-awesome-icon icon="caret-down" />
+          </span>
+        </div>
       </div>
     </div>
   </div>
@@ -33,16 +35,19 @@ export default {
     .profile {
       padding: 8px;
       display: flex;
-      span {
-        padding: 8px;
-        margin-top: 12px;
-        display: flex;
-        position: relative;
-      }
-      svg {
-        position: absolute;
-        left: 70px;
-        top: 10px;
+      .profile-name {
+        cursor: pointer;
+        span {
+          padding: 8px;
+          margin-top: 12px;
+          display: flex;
+          position: relative;
+        }
+        svg {
+          position: absolute;
+          left: 70px;
+          top: 10px;
+        }
       }
     }
 }
