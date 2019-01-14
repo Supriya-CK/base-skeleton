@@ -6,6 +6,8 @@
     <Highlights></Highlights>
     <KeyFeatures></KeyFeatures>
     <Explore></Explore>
+    <GetStarted></GetStarted>
+    <Payments></Payments>
     <PageFooter></PageFooter>
   </div>
 </template>
@@ -16,6 +18,8 @@ import Features from './components/Features.vue';
 import Highlights from './components/Highlights.vue';
 import KeyFeatures from './components/KeyFeatures.vue';
 import Explore from './components/Explore.vue';
+import GetStarted from './components/GetStarted.vue';
+import Payments from './components/Payments.vue';
 import NavigationBar from '@/components/NavigationBar.vue';
 import PageFooter from '@/components/PageFooter.vue';
 
@@ -29,6 +33,8 @@ export default {
     Highlights,
     KeyFeatures,
     Explore,
+    GetStarted,
+    Payments,
   },
 };
 </script>

@@ -72,6 +72,10 @@ export default {
   background: white;
   position: relative;
     padding: 4rem 0;
+    .columns {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .highlight-image {
         display: flex;
         margin-top: 4rem;
@@ -97,9 +101,11 @@ export default {
     }
   .left-highlight {
       background: #867cdf;
+      padding: 0;
   }
   .right-highlight {
       background: #3c3d6c;
+    padding: 0;
   }
 }
 </style>
