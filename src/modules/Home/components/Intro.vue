@@ -8,7 +8,25 @@
             <p class="description">In app messaging as engaging as any messenger app</p>
             <p class="sub-description">Captivate your customer and community with private messaging,
               groupand public chat rooms - from two users to million</p>
-            <button class="button">Get Started</button>
+            <!--<button class="button get-started">Get Started</button>-->
+            <a class="button google social-login">
+              <figure class="image is-32x32">
+                <img class="socail-links" src="../../../assets/img/google-signIn.png">
+              </figure>
+              <span>Sign in with Google</span>
+            </a>
+            <a class="button facebook social-login">
+              <figure class="image is-32x32">
+                <img class="socail-links" src="../../../assets/img/facebook-signIn.png">
+              </figure>
+              <span>Sign in with Facebook</span>
+            </a>
+            <a class="button twitter social-login">
+              <figure class="image is-32x32">
+                <img class="socail-links" src="../../../assets/img/twitter.png">
+              </figure>
+              <span>Sign in with Twitter</span>
+            </a>
           </div>
         </div>
         <div class="column is-offset-1 is-7">
@@ -22,9 +40,15 @@
 </template>
 
 <script>
+import constant from '../../../constants';
 
 export default {
   name: 'Intro',
+  computed: {
+    facebookLoginUrl() {
+      return `${constant.API_BASE_URL}auth/facebook`;
+    },
+  },
 };
 </script>
 
@@ -48,7 +72,7 @@ export default {
       font-weight: 400;
       margin-bottom: 1.5rem;
     }
-    .button {
+    .get-started {
       font-size: 1rem;
       font-weight: 500;
       width: 200px;

@@ -26,3 +26,28 @@ html body {
 button {
   outline: none !important;
 }
+.social-login {
+  height: 50px;
+  width: 300px;
+  justify-content: left;
+  margin-bottom: 20px;
+  border: none;
+  span {
+    color: white;
+    border-left: 1px solid grey;
+    padding-left: 15px;
+    margin-left: 15px;
+  }
+}
+.google {
+  background-color: #d63d2d;
+}
+.facebook {
+  background-color: #3e68af;
+}
+.twitter {
+  background-color: #62aeeb;
+}
+.socail-links {
+  border-radius: 50px;
+}

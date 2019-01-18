@@ -44,6 +44,32 @@
               </div>
             </div>
         </div>
+        <div class="columns login-links">
+          <div class="column is-offset-1 is-3 login-link">
+            <a class="button google social-login">
+              <figure class="image is-32x32">
+                <img class="socail-links" src="../../../assets/img/google-signIn.png">
+              </figure>
+              <span>Sign in with Google</span>
+            </a>
+          </div>
+          <div class="column is-3 login-link">
+            <a class="button facebook social-login">
+              <figure class="image is-32x32">
+                <img class="socail-links" src="../../../assets/img/facebook-signIn.png">
+              </figure>
+              <span>Sign in with Facebook</span>
+            </a>
+          </div>
+          <div class="column is-3 login-link">
+            <a class="button twitter social-login">
+              <figure class="image is-32x32">
+                <img class="socail-links" src="../../../assets/img/twitter.png">
+              </figure>
+              <span>Sign in with Twitter</span>
+            </a>
+          </div>
+        </div>
     </div>
   </div>
 </template>
@@ -69,6 +95,15 @@ export default {
       color: white;
       font-weight: 400;
       font-size: 2rem;
+    }
+  }
+  .login-links {
+    margin-top: 2rem;
+    .login-link {
+      text-align: right;
+      .social-login {
+        text-align: right;
+      }
     }
   }
   .explore-box {
