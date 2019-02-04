@@ -2,17 +2,13 @@
   <div class="NavigationBar" :class="{'navBarFix': scrolled}">
     <div class="columns container is-fluid">
       <div class="column is-1 links">
-        <figure class="image is-64x64">
-          <img src="../assets/img/logo.png">
+        <figure class="image is-128x128">
+          <img src="../assets/img/Logo.png">
         </figure>
       </div>
-      <div class="column is-1 links">FEATURES</div>
-      <div class="column is-1 links">CUSTOMERS</div>
-      <div class="column is-1 links">PRICING</div>
-      <div class="column is-1 links">DOCS</div>
-      <div class="column is-1 links">BLOG</div>
-      <div class="column is-1 is-offset-4 links">SUPPORT</div>
-      <router-link class="column is-1 links" tag="div" to="/auth/login">SIGN IN</router-link>
+      <div class="column is-1 is-offset-8 links">Pricing</div>
+      <div class="column is-1 links">Features</div>
+      <div class="column is-1 links">Contact</div>
     </div>
   </div>
 </template>
@@ -47,7 +43,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "./../assets/styles/variables";
+@import "./../assets/styles/DesignSystem";
 
 .NavigationBar{
     position: fixed;
@@ -57,9 +53,13 @@ export default {
     z-index: 999;
     width: 100%;
     .links {
-      font-size: 14px;
-      color: #38356a;
-      font-weight: 500;
+      font-family: Chivo;
+      font-style: normal;
+      font-weight: normal;
+      line-height: normal;
+      font-size: 16px;
+      text-align: center;
+      color: $text-01;
       cursor: pointer;
       position: relative;
       padding: 0.75rem 0.75rem 0.75rem 0;
@@ -68,7 +68,6 @@ export default {
       img {
         position: absolute;
         top: -18px;
-        left: -10px;
       }
     }
 }

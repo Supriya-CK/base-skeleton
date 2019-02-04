@@ -1,0 +1,128 @@
+$brand-01: #4BAD31;
+$brand-02: #6CC24A;
+$brand-03: #FFC61E;
+$ui-01: #FFFFFF;
+$ui-02: #F4F7FB;
+$ui-03: #DFE3E6;
+$ui-04: #8897A2;
+$ui-05: #5A6872;
+$ui-06: #000000;
+$text-01: #152935;
+$text-02: #5A6872;
+$text-03: #CDD1D4;
+$inverse-01: #FFFFFF;
+$inverse-02: #272D33;
+$field-01: #F4F7FB;
+$field-02: #FFFFFF;
+
+$hover-primary: #7DBA00;
+$hover-primary-text: #00A160;
+$hover-danger: #D75444;
+$hover-secondary: #00B27F;
+$hover-row: #DBE3B6;
+
+$support-01: #F23819;
+$support-02: #2DBE60;
+$support-03: #FFCB00;
+$support-04: #009AE7;
+
+$grad-01: linear-gradient(rgba(75, 173, 49, 0.8) 0%, rgba(108, 194, 74, 0.7) 100%);
+$grad-02: linear-gradient(rgba(75, 173, 49, 0.7) 0%, rgba(255, 198, 30, 0.7) 100%);
+$grad-03: linear-gradient(rgba(90, 104, 114, 0.7) 0%, #F4F7FB 100%);
+
+.raised {
+    border-radius: 2px;
+    Offset: 0px, 1px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+    border-radius: 8px;
+    Offset: 0px, 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav {
+    border-radius: 12px;
+    Offset: 0px, 6px rgba(0, 0, 0, 0.1);
+}
+
+.temporary-nav {
+    border-radius: 16px;
+    Offset: 0px, 8px rgba(0, 0, 0, 0.1);
+}
+
+.pop-out {
+    border-radius: 24px;
+    Offset: 0px, 12px rgba(0, 0, 0, 0.1);
+}
+
+.legal {
+    font-family: Chivo;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.caption {
+    font-family: Chivo;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.paragraph {
+    font-family: Chivo;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.border-omega {
+    font-family: Chivo;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.border-zeta {
+    font-family: Chivo;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.border-epsilon {
+    font-family: Chivo;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.border-delta {
+    font-family: Chivo;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.border-gamma {
+    font-family: Chivo;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.border-beta {
+    font-family: Chivo;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+.border-alpha {
+    font-family: Chivo;
+    font-weight: lighter;
+    font-size: 36px;
+}
+
+.display-mega {
+    font-family: Chivo;
+    font-weight: bold;
+    font-size: 54px;
+}
+
+.display-giga {
+    font-family: Chivo;
+    font-weight: bold;
+    font-size: 76px;
+}

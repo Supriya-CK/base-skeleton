@@ -1,7 +1,9 @@
 <template>
   <div class="Home">
-    <NavigationBar></NavigationBar>
-    <Intro></Intro>
+    <div class="header">
+      <NavigationBar></NavigationBar>
+      <Intro></Intro>
+    </div>
     <Features></Features>
     <Highlights></Highlights>
     <KeyFeatures></KeyFeatures>
@@ -41,8 +43,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.Home{
-  background: #c6c5f7;
+.Home {
   height: auto;
+  .header {
+    height: 915px;
+    background: url("../../assets/img/background-landing.png") no-repeat;
+  }
 }
 </style>

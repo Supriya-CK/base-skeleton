@@ -48,7 +48,7 @@
           <div class="column is-offset-1 is-3 login-link">
             <a class="button google social-login">
               <figure class="image is-32x32">
-                <img class="socail-links" src="../../../assets/img/google-signIn.png">
+                <img class="socail-links" src="../../../assets/img/google.svg">
               </figure>
               <span>Sign in with Google</span>
             </a>
@@ -56,17 +56,9 @@
           <div class="column is-3 login-link">
             <a class="button facebook social-login">
               <figure class="image is-32x32">
-                <img class="socail-links" src="../../../assets/img/facebook-signIn.png">
+                <img class="socail-links" src="../../../assets/img/facebook.svg">
               </figure>
               <span>Sign in with Facebook</span>
-            </a>
-          </div>
-          <div class="column is-3 login-link">
-            <a class="button twitter social-login">
-              <figure class="image is-32x32">
-                <img class="socail-links" src="../../../assets/img/twitter.png">
-              </figure>
-              <span>Sign in with Twitter</span>
             </a>
           </div>
         </div>

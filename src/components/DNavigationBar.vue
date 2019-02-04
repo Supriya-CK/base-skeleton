@@ -3,7 +3,7 @@
     <div class="columns">
       <div class="column is-2 is-offset-1">
         <figure class="image is-64x64">
-          <img src="./../assets/img/logo.png">
+          <img src="./../assets/img/Logo.png">
         </figure>
       </div>
       <div class="column is-2 is-offset-7 profile">
@@ -25,12 +25,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import "./../assets/styles/variables";
+@import "./../assets/styles/DesignSystem";
+
 .DNavigationBar {
     position: fixed;
     width: 100%;
     padding: 1rem 1.5rem 0.1rem;
-    background: $navBar;
+    background: $ui-01;
     box-shadow: 1px 5px 7px #dbdbdc;
     .profile {
       padding: 8px;

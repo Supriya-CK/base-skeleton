@@ -2,39 +2,46 @@
   <div class="Intro">
     <div class="container is-fluid">
       <div class="columns">
-        <div class="column is-4">
+        <div class="column is-8">
           <div class="intro-chat">
-            <h6 class="title">CHAT & MESSAGING</h6>
-            <p class="description">In app messaging as engaging as any messenger app</p>
-            <p class="sub-description">Captivate your customer and community with private messaging,
-              groupand public chat rooms - from two users to million</p>
+            <p class="border-alpha">
+              <span class="display-mega">Engage</span> your customers
+            </p>
+            <p class="border-alpha push-right">
+              with <span class="display-mega">meaningful</span> notifications
+            </p>
+            <p class="border-alpha">
+              <span class="display-mega">stop</span> sending emails
+            </p>
+            <p class="border-alpha push-right-little">
+              <span class="display-mega">go green</span> with PushScale
+            </p>
             <!--<button class="button get-started">Get Started</button>-->
+          </div>
+        </div>
+      </div>
+      <div class="columns social-links">
+        <div class="column is-4">
             <a class="button google social-login">
-              <figure class="image is-32x32">
-                <img class="socail-links" src="../../../assets/img/google-signIn.png">
+              <figure class="image is-48x48">
+                <img class="socail-links" src="../../../assets/img/google.svg">
               </figure>
-              <span>Sign in with Google</span>
+              <span>Continue with Google</span>
             </a>
             <a class="button facebook social-login">
-              <figure class="image is-32x32">
-                <img class="socail-links" src="../../../assets/img/facebook-signIn.png">
+              <figure class="image is-48x48">
+                <img class="socail-links" src="../../../assets/img/facebook.svg">
               </figure>
-              <span>Sign in with Facebook</span>
+              <span>Continue with Facebook</span>
             </a>
-            <a class="button twitter social-login">
-              <figure class="image is-32x32">
-                <img class="socail-links" src="../../../assets/img/twitter.png">
+            <a class="button github social-login">
+              <figure class="image is-48x48">
+                <img class="socail-links" src="../../../assets/img/github.svg">
               </figure>
-              <span>Sign in with Twitter</span>
+              <span>Continue with Twitter</span>
             </a>
           </div>
         </div>
-        <div class="column is-offset-1 is-7">
-          <figure class="image">
-            <img src="../../../assets/img/desktops.png">
-          </figure>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -54,34 +61,31 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "./../../../assets/styles/DesignSystem";
+
 .Intro {
   top: 150px;
   position: relative;
   padding: 2rem 1.5rem 2rem;
   .intro-chat {
-    .title {
-      font-size: 1.1rem;
+    .border-alpha {
+      color: $text-02;
     }
-    .description {
-      font-size: 2.3rem;
-      font-weight: 400;
-      margin-bottom: 1.5rem;
+    .push-right {
+      left: 31%;
+      position: relative;
     }
-    .sub-description {
-      font-size: 0.9rem;
-      font-weight: 400;
-      margin-bottom: 1.5rem;
+    .push-right-little {
+      position: relative;
+      left: 10%;
     }
-    .get-started {
-      font-size: 1rem;
-      font-weight: 500;
-      width: 200px;
-      border: 2px solid transparent;
-      height: 50px;
-      color: white;
-      box-shadow: 4px 8px 29px #9197e4;
-      background: #8479e6;
+    .display-mega {
+      color: $text-01;
     }
+  }
+  .social-links {
+    position: relative;
+    top: 100px;
   }
 }
 </style>

@@ -1,16 +1,21 @@
 <template>
   <div class="Features">
     <div class="container is-fluid">
-        <div class="columns">
-            <div class="column is-12 feature-image">
-                <figure class="image is-64x64">
-                    <img src="../../../assets/img/features.png">
-                </figure>
+        <div class="columns feature-tabs">
+            <div class="column is-offset-1 is-2">
+                <p class="border-gamma feature-tab">Personalized Message</p>
             </div>
-        </div>
-        <div class="columns">
-            <div class="column is-12 feature-heading">
-                <h6 class="title">Full - Featured chat & messaging in a snap</h6>
+            <div class="column is-2">
+                <p class="border-gamma feature-tab">Behaviour Campaigns</p>
+            </div>
+            <div class="column is-2">
+                <p class="border-gamma feature-tab">Custom Segments</p>
+            </div>
+            <div class="column is-2">
+                <p class="border-gamma feature-tab">Automated Triggers</p>
+            </div>
+            <div class="column is-2">
+                <p class="border-gamma feature-tab">And so much more</p>
             </div>
         </div>
         <div class="columns">
@@ -81,15 +86,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "./../../../assets/styles/DesignSystem";
+
 .Features {
-  top: 150px;
-  background: white;
   position: relative;
   padding: 2rem 1.5rem 5rem;
-    .feature-image {
-        display: flex;
-        margin-top: 4rem;
-        justify-content: center;
+    .feature-tabs {
+        height: 100px;
+        .feature-tab{
+            position: relative;
+            width: 89%;
+            font-weight: normal;
+            text-align: center;
+            color: $text-01;
+        }
     }
     .feature-heading {
         text-align: center;
