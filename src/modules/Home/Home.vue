@@ -5,11 +5,8 @@
       <Intro></Intro>
     </div>
     <Features></Features>
-    <Highlights></Highlights>
-    <KeyFeatures></KeyFeatures>
-    <Explore></Explore>
-    <GetStarted></GetStarted>
     <Payments></Payments>
+    <GetInTouch></GetInTouch>
     <PageFooter></PageFooter>
   </div>
 </template>
@@ -17,11 +14,8 @@
 <script>
 import Intro from './components/Intro.vue';
 import Features from './components/Features.vue';
-import Highlights from './components/Highlights.vue';
-import KeyFeatures from './components/KeyFeatures.vue';
-import Explore from './components/Explore.vue';
-import GetStarted from './components/GetStarted.vue';
 import Payments from './components/Payments.vue';
+import GetInTouch from './components/GetInTouch.vue';
 import NavigationBar from '@/components/NavigationBar.vue';
 import PageFooter from '@/components/PageFooter.vue';
 
@@ -32,10 +26,7 @@ export default {
     PageFooter,
     Intro,
     Features,
-    Highlights,
-    KeyFeatures,
-    Explore,
-    GetStarted,
+    GetInTouch,
     Payments,
   },
 };

@@ -64,7 +64,7 @@ export default {
 @import "./../../../assets/styles/DesignSystem";
 
 .Intro {
-  top: 150px;
+  //top: 150px;
   position: relative;
   padding: 2rem 1.5rem 2rem;
   .intro-chat {

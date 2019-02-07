@@ -1,5 +1,5 @@
 <template>
-  <div class="NavigationBar" :class="{'navBarFix': scrolled}">
+  <div class="NavigationBar"><!--:class="{'navBarFix': scrolled}"-->
     <div class="columns container is-fluid">
       <div class="column is-1 links">
         <figure class="image is-128x128">
@@ -46,7 +46,7 @@ export default {
 @import "./../assets/styles/DesignSystem";
 
 .NavigationBar{
-    position: fixed;
+    //position: fixed;
     padding: 2rem 1.5rem 2rem;
     transition: all 0.8s;
     background: transparent;

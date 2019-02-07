@@ -28,7 +28,7 @@ $support-04: #009AE7;
 
 $grad-01: linear-gradient(rgba(75, 173, 49, 0.8) 0%, rgba(108, 194, 74, 0.7) 100%);
 $grad-02: linear-gradient(rgba(75, 173, 49, 0.7) 0%, rgba(255, 198, 30, 0.7) 100%);
-$grad-03: linear-gradient(rgba(90, 104, 114, 0.7) 0%, #F4F7FB 100%);
+$grad-03: linear-gradient(360deg, rgba(90, 104, 114, 0.7) 0%, #F4F7FB 108.25%);
 
 .raised {
     border-radius: 2px;
@@ -42,7 +42,7 @@ $grad-03: linear-gradient(rgba(90, 104, 114, 0.7) 0%, #F4F7FB 100%);
 
 .sticky-nav {
     border-radius: 12px;
-    Offset: 0px, 6px rgba(0, 0, 0, 0.1);
+    Offset: 0px 6px rgba(0, 0, 0, 0.1);
 }
 
 .temporary-nav {

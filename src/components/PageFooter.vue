@@ -4,21 +4,29 @@
       <div class="content container is-fluid">
         <div class="columns">
 
-          <div class="column is-2 links">
-            <p class="headings">Features</p>
-            <div class="columns is-mobile">
-              <div class="column">
-                <ul>
-                  <li>Chat & Messaging</li>
-                  <li>Moderation & Data</li>
-                </ul>
-              </div>
+          <div class="column is-offset-1 is-2 footer-left">
+            <figure class="image is-128x128">
+              <img src="../assets/img/gdpr-compilance.svg">
+            </figure>
+            <figure class="image is-128x128">
+              <img src="../assets/img/Logo.png">
+            </figure>
+            <div class="socail-links">
+              <figure class="image is-32x32">
+                <img src="../assets/img/google.svg">
+              </figure>
+              <figure class="image is-32x32">
+                <img src="../assets/img/facebook.svg">
+              </figure>
+              <figure class="image is-32x32">
+                <img src="../assets/img/github.svg">
+              </figure>
             </div>
           </div>
 
 
-          <div class="column is-2 links">
-            <p class="headings">Solutions</p>
+          <div class="column is-offset-1 is-3 footer-middle">
+            <p class="headings">Subscribe to newsletters</p>
              <div class="columns is-mobile">
               <div class="column">
                 <ul>
@@ -29,70 +37,25 @@
             </div>
           </div>
 
-          <div class="column is-2 links">
-            <p class="headings">Documentation</p>
-            <div class="columns is-mobile">
-              <div class="column">
-                <ul>
-                  <li>Unity SDK</li>
-                  <li>Platform API</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-2 links">
-            <p class="headings">Support</p>
-            <div class="columns is-mobile">
-              <div class="column">
-                <ul>
-                  <li>Help Center</li>
-                  <li>Conatct US</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-2 links">
-            <p class="headings">Comapny</p>
-            <div class="columns is-mobile">
-              <div class="column">
-                <ul>
-                  <li>About Us</li>
-                  <li>Jobs</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="column is-2 links">
-             <p class="headings">Follow Us At</p>
-            <div class="columns is-mobile">
-              <div class="column social-links">
-                <ul>
-                  <li>
-                    <figure class="image is-32x32">
-                      <img src="./../assets/img/footer-fb.png">
-                    </figure>
-                  </li>
-                  <li>
-                    <figure class="image is-32x32">
-                      <img src="./../assets/img/footer-TT.png">
-                    </figure>
-                  </li>
-                  <li>
-                    <figure class="image is-32x32">
-                      <img src="./../assets/img/footer-lI.png">
-                    </figure>
-                  </li>
-                  <li>
-                    <figure class="image is-32x32">
-                      <img src="./../assets/img/footer-gH.png">
-                    </figure>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div class="column is-offset-1 is-3 footer-right">
+            <p class="headings">Product</p>
+            <h6 class="sub-heading">Features</h6>
+            <ul>
+              <li>- Setup custom campaigns</li>
+              <li>- Add multiple customer segments</li>
+              <li>- Automatically trigger your events</li>
+              <li>- Support Browsers, Android and iOS devices</li>
+              <li>- Maintain GDPR compliance</li>
+              <li>- Test and deploy live</li>
+              <li>- Zero step configuration</li>
+            </ul>
+            <h6 class="sub-heading">Pricing</h6>
+            <ul>
+              <li>- Starter Plan</li>
+              <li>- Scale Plan</li>
+              <li>- Pay as you go</li>
+            </ul>
+            <h6 class="sub-heading">Contact</h6>
           </div>
         </div>
       </div>
@@ -108,19 +71,48 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "./../assets/styles/DesignSystem";
+
 .PageFooter{
   position: relative;
   top: 150px;
   width: 100%;
+  background: $grad-03;
   .footer {
-    padding: 2rem 1.5rem 2rem;
+    background: transparent;
+    padding: 0;
     .content {
-      ul {
-        margin-left: 0px;
+      .footer-left {
+        .socail-links {
+          display: flex;
+          .image {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
       }
-      .headings {
-        color: grey;
-        margin-bottom: 0.5em;
+      .footer-middle {
+
+      }
+      .footer-right {
+        .headings {
+          font-weight: 300;
+          font-size: 28px;
+          color: $text-02;
+        }
+        .sub-heading {
+          font-weight: normal;
+          font-size: 16px;
+          color: $text-02;
+        }
+        ul {
+          margin-left: 0;
+          li {
+            font-weight: normal;
+            font-size: 12px;
+            color: $text-02;
+          }
+        }
       }
       .social-links {
         ul {
