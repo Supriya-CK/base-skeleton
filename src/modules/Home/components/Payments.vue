@@ -15,7 +15,11 @@
         <div class="columns">
           <div class="column is-offset-7 is-5 payments-button">
               <h6 class="left">Show Flexible Plan</h6>
-              <button>Get Started</button>
+              <CheckBox class="checkbox"
+                @checkEvent="checkEvent"
+                :checked="checked"
+                :CheckedValue="'Flexible'"
+                :UnCheckedValue="'Fixed'"></CheckBox>
               <h6 class="right">Show Fixed Plans</h6>
           </div>
         </div>
@@ -53,7 +57,7 @@
                   50K Monthly notifications
                 </li>
               </ul>
-              <button>Subscribe Now</button>
+              <SecondaryButton :text="'Subscribe Now'"></SecondaryButton>
             </div>
           </div>
           <div class="column is-5 sticky-nav payments-box">
@@ -88,7 +92,7 @@
                   50K Monthly notifications
                 </li>
               </ul>
-              <button>Subscribe Now</button>
+              <PrimaryButton :text="'Subscribe Now'"></PrimaryButton>
             </div>
           </div>
         </div>
@@ -97,9 +101,27 @@
 </template>
 
 <script>
+import PrimaryButton from '@/components/Buttons/Primary/Normal.vue';
+import SecondaryButton from '@/components/Buttons/Secondary/Normal.vue';
+import CheckBox from '@/components/Buttons/Checkbox.vue';
 
 export default {
   name: 'Payments',
+  components: {
+    PrimaryButton,
+    SecondaryButton,
+    CheckBox,
+  },
+  data() {
+    return {
+      checked: false,
+    };
+  },
+  methods: {
+    checkEvent() {
+      this.checked = !this.checked;
+    },
+  },
 };
 </script>
 
@@ -129,6 +151,10 @@ export default {
   .payments-button {
     display: flex;
     margin: 0 auto;
+    .checkbox {
+      margin: 0 20px;
+      top: -9px;
+    }
     h6 {
       font-weight: normal;
       font-size: 20px;
@@ -144,6 +170,11 @@ export default {
   }
   .payments-box {
     margin-top: 4rem;
+    button {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
     .price-box {
       margin-bottom: 3rem;
       .title {

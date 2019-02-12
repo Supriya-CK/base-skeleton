@@ -50,7 +50,7 @@
                 <h5 class="get-started">We can supercharge your customer engagement</h5>
             </div>
             <div class="column is-4">
-                <button>Get Started</button>
+                <ButtonWithIcon :text="'Get Started'"></ButtonWithIcon>
             </div>
         </div>
     </div>
@@ -58,9 +58,13 @@
 </template>
 
 <script>
+import ButtonWithIcon from '@/components/Buttons/Primary/WithIcon.vue';
 
 export default {
   name: 'Features',
+  components: {
+      ButtonWithIcon,
+  },
 };
 </script>
 
@@ -113,6 +117,8 @@ export default {
         font-weight: 300;
         font-size: 36px;
         color: $brand-01;
+        position: relative;
+        top: 12px;
     }
 }
 </style>

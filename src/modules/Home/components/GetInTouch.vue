@@ -13,6 +13,16 @@
 
         <div class="columns">
             <div class="column is-offset-2 is-8 form">
+                <div class="columns is-mobile">
+                    <div class="column">
+                        <Input :name="'Name of Organization'" :placeholder="'Company name'"></Input>
+                        <Input :name="'Message'" :placeholder="'Type your message'"></Input>
+                    </div>
+                    <div class="column">
+                        <Input :name="'Email ID'" :placeholder="'Company email id'"></Input>
+                        <SecondaryButton :text="'Lets Talk'"></SecondaryButton>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -20,9 +30,15 @@
 </template>
 
 <script>
+import Input from '@/components/Buttons/Input.vue';
+import SecondaryButton from '@/components/Buttons/Secondary/Normal.vue';
 
 export default {
-  name: 'GetInTouch',
+    name: 'GetInTouch',
+    components: {
+        Input,
+        SecondaryButton,
+    },
 };
 </script>
 
@@ -53,9 +69,18 @@ export default {
     }
     .form {
         height: 310px;
-        background: $grad-03;
-        opacity: 0.1;
+        background: linear-gradient(360deg, rgba(90, 104, 114, 0.2) 0%, rgba(244, 247, 251, 0.2) 108.25%);
         border-radius: 30px;
+        input {
+            width: 89%;
+            height: 55px;
+        }
+        button {
+            line-height: 45px;
+            width: 89%;
+            height: 55px;
+            margin: 43px 0;
+        }
     }
 }
 </style>
